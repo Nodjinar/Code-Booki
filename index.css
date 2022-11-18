@@ -1,0 +1,49 @@
+/* GENERAL*/
+html, body
+{
+    font-family: Raleway ;
+}
+.nav
+{
+    display: flex;
+    border: 1px solid none;
+    justify-content: space-between;
+
+}
+.header
+{
+    display: flex;
+    justify-content: space-between;
+}
+.filters
+{
+    display: flex;
+    border: 1px solid none;
+    justify-content: space-around;
+}
+img
+{
+    width: 300px;
+    height: 150px;
+}
+.all_div{
+    display: flex;
+    flex-direction: column;
+}   
+    
+    
+
+.bloc_article{
+    background-color: aqua;
+    border: solid 1px black;
+    display: flex;
+    justify-content: space-around;
+}
+article{
+    padding: 4px;
+    border: white;
+    display: flex;
+    flex-direction: column;
+   /* border:solid 1px black;*/
+    
+}
