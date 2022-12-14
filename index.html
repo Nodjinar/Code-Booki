@@ -1,49 +1,292 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
   <meta charset="utf-8" />
+  <meta http-equiv="x-UA-Compatible" content="IE=edge">
+  <link rel="preconnect" href="http://fonts.googleapis.com">
   <link rel="stylesheet" href="index.css" />
+  <script src="https://use.fontawesome.com/805b5cfcaa.js"></script>
   <title>Booki</title>
 </head>
 
 <body>
   <header class="header">
-    <h1> Booki</h1>
+   <div class="logo"> <img src="img/booki_logo.svg" alt="booki-logo"></div>
+
     <nav>
-      <a href="#">Hebergements</a>
-      <a href="#">Activités</a>
-      <a href="#">S'inscrire</a>
+      <div class="sub-nav">
+        <a href="#">Hebergements</a>
+        <a href="#">Activités</a>
+      </div>
     </nav>
   </header>
-  <div>
     <h2>Trouver votre hébergement pour des vacances de rêve</h2>
     <p>En plein centre ville ou en pleine nature</p>
-    <i class="fa-solid fa-location-dot"></i>
-    <label for="search" class="accessibility-label">Marseille,France</label>
+    <!--SEARCH-FORM-->
+  <div class="searcch-form">
+   <i class="fa fa-map-marker" aria-hidden="true"></i>
     <input type="text" id="search" placeholder="Marseille,France">
-    <button><span>Recherche</span>
-      <i class="fa-solid fa-magnifying-glass"></i>
-    </button><br>
+    <button><span>Recherche</span></button>
   </div>
-  <div class="filters">
-    <div class="btn-filters">
+
+  <div class="filtre margFiltre">
+    <div class="margFiltreTitre">
+      <h3>Filtres</h3>
     </div>
-    <p><i class="fa-solid fa-money-bill-wave"></i>Filtres</p>
-    <div class="btn-filters">
-      <p><i class="fa-solid fa-money-bill-wave"></i>Economique</p>
+    <div class="flexBetween filtreTexteIcons">
+      <div class="filtreIcons">
+        <i class="fa fa-money fa-lg  flexCentre" aria-hidden="true"></i>
+      </div>
+      <div class="filtreTexte flexCentre">Economiques</div>
     </div>
-    <div class="btn-filters">
-      <p><i class="fa-solid fa-child-reaching"></i>Familiale</p>
+    <div class="flexBetween filtreTexteIcons">
+      <div class="filtreIcons">
+        <i class="fa fa-child fa-lg  flexCentre" aria-hidden="true"></i>
+      </div>
+      <div class="filtreTexte flexCentre">Familiales</div>
     </div>
-    <div class="btn-filters">
-      <p><i class="fa-solid fa-heart"></i>Romantique</p>
+    <div class="flexBetween filtreTexteIcons">
+      <div class="filtreIcons">
+        <i class="fa fa-heart fa-lg  flexCentre" aria-hidden="true"></i>
+      </div>
+      <div class="filtreTexte flexCentre">Romantiques</div>
     </div>
-    <div class="btn-filters">
-      <p><i class="fa-solid fa-dog"></i>Animaux autorisés</p>
+    <div class="FlexBetween filtreTexteIcons">
+      <div class="filtreIcons">
+        <i class="fa fa-font-awesome fa-lg  flexCentre" aria-hidden="true"></i>
+      </div>
+      <div class="filtreTexte flexCentre">Animaux autorisés</div>
     </div>
   </div>
-  <div id="icon-infos">
-    <p>de 500 logements sont disponible dans cette ville</p>
+  <!--RESULTS MESSAGE-->
+
+  <div class="results-message">
+    <i class="fa fa-info"></i>
+    <p>Plus de 500 logements sont disponible dans cette
+      ville</p>
   </div>
- 
+
+  <section class="appartement">
+
+    <div class="hebergement">
+      <h3>Hebergement à Marseille</h3>
+      <div class="chambre1">
+
+        <div class="can">
+          <img src="img/lacannebire.png" alt="lacannabière" width="200px" />
+          <p><strong>Auberge de la Cannabière</strong><br>
+            Nuit à partr de <strong> 25£</strong>
+          </p>
+          <P>
+          <div class="étoile">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+          </div>
+          </p>
+        </div>
+
+        <div class="can">
+          <img src="img/hotelduport.png" alt="lacannabière" width="150px" />
+          <p><strong>Hotel du port</strong><br>
+            Nuit à partr de <strong> 75£</strong>
+          </p>
+          <P>
+          <div class="etoile">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+          </div>
+          </p>
+        </div>
+        <div class="can">
+          <img src="img/Les.mouettes.png" alt="hotel les mouettes" width="150px" />
+          <p><strong>Hotel les Mouettes</strong><br>
+            Nuit à partr de <strong> 65£</strong>
+          </p>
+          <P>
+          <div class="etoile">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+          </div>
+          </p>
+        </div>
+      </div>
+      <div class="chambre2">
+        <div class="can">
+          <img src="img/hoteldelamère.png" alt="hotel de la mer" width="150px" />
+          <p><strong>Hotel de la mère</strong><br>
+            Nuit à partr de <strong> 55£</strong>
+          </p>
+          <P>
+          <div class="etoile">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+          </div>
+          </p>
+        </div>
+
+        <div class="can">
+          <img src="img/aubergelepanier.png" alt="lacannabière" width="150px" />
+          <p><strong>Auberge le panier</strong><br>
+            Nuit à partr de <strong> 45£</strong>
+          </p>
+          <P>
+          <div class="etoile">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+          </div>
+          </p>
+        </div>
+
+        <div class="can">
+          <img src="img/amina.png" alt="lacannabière" width="150px" />
+          <p><strong>Hotel chez Amina</strong><br>
+            Nuit à partr de <strong> 25£</strong>
+          </p>
+          <P>
+          <div class="etoile">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+          </div>
+          </p>
+
+        </div>
+
+      </div>
+    </div>
+    <div class="popular">
+      <div class="populaire">
+        <h3>Les plus populaires</h3>
+        <div class="article2">
+          <img src="img/lacannebire.png" alt="lacannabière" width="150px" />
+          <div class="description">
+            <p><strong>Auberge de la Cannabière</strong><br>
+            <p>
+              Nuit à partr de <strong> 25£</strong>
+            </p>
+            </p>
+            <P>
+            <div class="etoile">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            </p>
+          </div>
+        </div>
+        <div class="article2">
+          <img src="img/lacannebire.png" alt="lacannabière" width="150px" />
+          <div class="description">
+            <p><strong>Auberge de la Cannabière</strong><br>
+            <p>
+              Nuit à partr de <strong> 25£</strong>
+            </p>
+            </p>
+            <P>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </p>
+          </div>
+        </div>
+
+        <div class="article2">
+          <img src="img/lacannebire.png" alt="lacannabière" width="150px" />
+          <div class="description">
+            <p><strong>Auberge de la Cannabière</strong><br>
+            <p>
+              Nuit à partr de <strong> 25£</strong>
+            </p>
+            </p>
+            <P>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <h3>Activités à Marseille</h3>
+  <div class="activity">
+      <div class="bloc">
+      <img src="img/vieuxport.png" alt="vieuxport" width="250px" />
+      <figcaption> <strong>vieux port</strong></figcaption>
+    </div>
+
+    <div class="bloc1">
+      <div class="bloc02">
+        <img src="img/pomegués.png" alt="pomegués" height="150px" />
+        <figcaption> <strong>Fort de Promegués</strong></figcaption>
+      </div>
+      <div class="bloc02">
+      <img src="img/frioul.png" alt="frioul" height="90px" />
+      <figcaption> <strong>îles du frioul</strong></figcaption>
+    </div>
+  </div>
+
+  <div class="bloc">
+    <img src="img/calanques.png" alt="calenques" width="250px" />
+    <figcaption> <strong>Parc National des Calanques</strong></figcaption>
+  </div>
+
+  <div class="bloc1">
+    <div class="bloc02">
+      <img src="img/pomegués.png" alt="pomegués" height="150px" />
+      <figcaption> <strong>Fort de Promegués</strong></figcaption>
+    </div>
+    <div class="bloc02">
+    <img src="img/frioul.png" alt="frioul" height="90px" />
+    <figcaption> <strong>îles du frioul</strong></figcaption>
+  </div>
+</div>
+</div>
+
+
+  <footer>
+    <div class="footer">
+      <div class="margeBlocFoot1 tailleBlocFoot">
+        <h3>A propos</h3>
+        <p>Fonctionnement du site</p>
+        <p>Condition générale de vente</p>
+        <p>Données et Confidentialités</p>
+      </div>
+      <div class="tailleBlocFoot">
+        <h3>Nos Hebergements</h3>
+        <p>Charte Qualité</p>
+        <p>Soumettre votre Hotel</p>
+      </div>
+      <div class="margeBlocFoot3 tailleBlocFoot">
+        <h3>Assistance</h3>
+        <p>Centre d'aide</p>
+        <p>Nous contacter</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
