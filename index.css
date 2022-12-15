@@ -8,26 +8,20 @@ h1
 {
     color: blue;
 }
-nav
+a
 {
     display: flex;
+    align-items: center;
     border: 1px solid none;
-    justify-content: space-between;
     text-decoration: none;
-    padding: 2em;
-    margin-left: 30px;
+}
+.container-nav{
+    display: flex;
+    gap: 6rem;
+    margin-top: 60px;
+}
 
-}
-@media (max-width: 900px){ 
-   .hebergement1+.conteneur{ 
-    flex-direction: column;
-}
-}
- section
-    {
-        flex-direction: column;
-    }
-  
+
 header
 {
     display: flex;
@@ -35,7 +29,6 @@ header
     border-top-right-radius: 20px ;
     border-bottom-right-radius: 20px;
     margin-right: 60px;
-
 }
 /*BODY */
 .wrapper{
@@ -106,6 +99,8 @@ header
 .filtreTexte {
     height: 100px;
     justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
     border-radius: 0 25px 25px 0;
 
 }
@@ -140,7 +135,7 @@ justify-content: center;
 {
 display: flex;
 flex-direction: row;
-gap: 4em;
+gap: 2em;
 
 }
 .chambre1, .chambre2
@@ -213,8 +208,7 @@ gap: 4em;
     display: flex;
     margin: 40px;
     border: 1px solid black;
-    border-radius: 1rem;
-    
+    border-radius: 1rem; 
 }
 .chambre1 img, .chambre2 img {
     width: 100%;
@@ -246,7 +240,11 @@ justify-content: space-around;
     border-color: darkseagreen;
     position: relative;
     left: 1em;
-
+ }
+ .hebergement
+ :hover + img{
+    transform: scale(1);
+    transition: opacity .3s;
  }
 
 .case
@@ -269,7 +267,6 @@ justify-content: space-around;
     display: flex;
     width: 100%;
     margin-left: 30px;
-    
 }
 .bloc, .bloc1
 {
@@ -286,14 +283,10 @@ justify-content: space-around;
     width: 90%;
 
 }
-
-
 .bloc2, img{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     width: 90%;
-   
-
 }
 
 /* footer*/
@@ -305,7 +298,6 @@ justify-content: space-around;
     align-items: flex-start;
     padding-left: -1px;
     text-align: left;
-
 }
 .tailleBlocFoot{
     justify-content: center;
