@@ -4,9 +4,17 @@ html, body
     font-family: sans-serif;
     font-size: italic;
 }
+@media screen and (max-width: 1220px)
 h1
 {
     color: blue;
+}
+/* NAV */
+.container-nav{
+    height: 100%;
+}
+.container1{
+    width: 100%;
 }
 a
 {
@@ -20,8 +28,11 @@ a
     gap: 6rem;
     margin-top: 60px;
 }
-
-
+@media  (max-width: 800px) {
+    .container-nav{
+        border: 2px solid blue;
+    }
+}
 header
 {
     display: flex;
@@ -59,8 +70,11 @@ header
     font-size: 1.2rem;
     border-radius: 0 1rem 1rem 0;
     padding: 0.8rem 1.2rem;
-    border: none;
-   
+    border: none;  
+}
+button:hover{
+    color: blue;
+    background-color: #f2f2f2;
 }
 
 /* filtres */
@@ -87,7 +101,6 @@ header
     height: 50px;
     border-radius: 30px;
     margin-right: 20px;
-    ;
 }
 .fitreTexteIcons:hover > .filtreTexte{
     color: #0065fc;
@@ -158,6 +171,7 @@ gap: 2em;
     position: relative;
     top: 1em;
     flex-wrap: wrap;
+    margin-left: 4rem;
 }
 .populaire
 {
@@ -166,8 +180,6 @@ gap: 2em;
     gap: 30px;
     border-radius: 20px;
     margin-top: -3em;
-
-
 }
 .populaire img
 {
@@ -241,10 +253,13 @@ justify-content: space-around;
     position: relative;
     left: 1em;
  }
- .hebergement
- :hover + img{
-    transform: scale(1);
-    transition: opacity .3s;
+ .can:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+ }
+ .article2:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
  }
 
 .case
@@ -266,21 +281,35 @@ justify-content: space-around;
 {
     display: flex;
     width: 100%;
-    margin-left: 30px;
+    margin-left: 4rem;
+}
+.marseille{
+    margin-left: 4rem;
 }
 .bloc, .bloc1
 {
-    width: 23%;
-    
+    width: 23%;  
+}
+.bloc02:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.bloc:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
 }
 .bloc02
 {
     margin-bottom: 100px;
     height: 50%;
+    margin-bottom: 2rem;
+    
+    gap: 2rem;
 } 
 .bloc02 img
 {
     width: 90%;
+    height: 13rem;
 
 }
 .bloc2, img{
@@ -311,6 +340,13 @@ justify-content: space-around;
 {
     margin-left: 15%;
 }
+/* responsivité */
+@media (max-widht: 1020px){
+    .can{
+        min-height: 150px;
+    }
+}
+
 
 
 
