@@ -152,15 +152,18 @@ justify-content: center;
 {
 display: flex;
 flex-direction: row;
-gap: 2em;
-margin-right: 2rem;
+margin-right: 40px;
+justify-content: space-between;
+width: 100%;
 }
 .appartement img{
     background-position: center;
 }
-@media screen and (max-width:760px){
+@media screen and (max-width:600px){
     .popular{
+        order: 1;
         flex-direction: column;
+        width: 100%;
     }
     
 }
@@ -175,64 +178,15 @@ margin-right: 2rem;
     border: 5px solid none;
     border-radius: 20px;
 }
-/* popular */
-.popular{
-    border: 1px solid white;
-    border-radius: 4rem;
-    padding: 1rem;
-    background-color: beige;
-    position: relative;
-    top: 1em;
-    flex-wrap: wrap;
-    
-}
-.populaire
-{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    border-radius: 20px;
-    margin-top: -3em;
-}
-.populaire img
-{
-    height: 10em;
-    border-radius: 1em 0 0 1em;
-    width: 20em;
-    height: 15rem;
-    flex-wrap: wrap;
-    height: 40%;
-    height: 30%;
-}
-.populaire h3
-{
-    position: relative;
-    top: 3em;
-}
+
 .can{
     border: 1px solid white;
     border-radius: 1em;
     background-color: white;
     width: 40%;
 }
-.article2
-{
-    display: flex;
-    border: 1px solid white;
-    border-radius: 0.5rem;
-    gap: 2rem;
-    background-color: white;
-    border-radius: 20px;
-    gap: 10px;
-    margin: 10px;
-}
-.description{
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    border-radius: 20px;
 
-}
+
 .can3
 {
     display: flex;
@@ -245,31 +199,14 @@ margin-right: 2rem;
     border-radius: 1em 1em 0 0;
     
 }
-.colon1
-{
-display: flex;
-justify-content: space-around;
-}
-.colon2
-{
-    display: flex;
-    justify-content: space-around;
-    padding: 15px;
-    margin: 0px;
-}
+
  .hebergement
  {
     border: 1px solid none;
-    width: 60%;
-    height: 650px;
-    border-radius: 4rem;
-    padding: 20px;
-    margin: 20px;
-    background-color:beige;
-    justify-content: space-around;
-    border-color: darkseagreen;
-    position: relative;
-    left: 1em;
+    width: 68%;
+    border-radius: 1em;
+    background-color:lightgrey;
+    padding: 0.5em;
  }
  .can:hover{
     transform: scale(1.1);
@@ -279,17 +216,28 @@ justify-content: space-around;
     transform: scale(1.1);
     transition: 0.3s;
  }
+ /* popular */
+.populaire{
+    width: 28%;
+    border-radius: 1em;
+    background-color: lightgrey;
+    padding: 1em;
+}
+.populaire .article{
+    display: flex;
+    margin-bottom: 2.5em;
+    border: 2px solid white;
+    border-radius: 1em;
+    transition: all 1s;
+}
+.populaire .article:hover{
+transform: scale(1.2);
+}
+.populaire .article img{
+    width: 60%;
+    border-radius: 1em 0 0 1em;
+}
 
-.case
-{
-    border: 1px solid black;
-    border-radius: 20px;
-}
-    .case img
-{
-    border-top-left-radius:20px ;
-    border-top-right-radius:20px;
-}
 .fa-star
 {
     color: #0065fc;
