@@ -3,12 +3,15 @@ html, body
 {
     font-family: sans-serif;
     font-size: italic;
+    margin-left: 4rem;
+
 }
 @media screen and (max-width: 1220px)
 h1
 {
     color: blue;
-}
+ }
+
 /* NAV */
 .container-nav{
     height: 100%;
@@ -40,6 +43,7 @@ header
     border-top-right-radius: 20px ;
     border-bottom-right-radius: 20px;
     margin-right: 60px;
+
 }
 /*BODY */
 .wrapper{
@@ -149,7 +153,16 @@ justify-content: center;
 display: flex;
 flex-direction: row;
 gap: 2em;
-
+margin-right: 2rem;
+}
+.appartement img{
+    background-position: center;
+}
+@media screen and (max-width:760px){
+    .popular{
+        flex-direction: column;
+    }
+    
 }
 .chambre1, .chambre2
 {
@@ -171,7 +184,7 @@ gap: 2em;
     position: relative;
     top: 1em;
     flex-wrap: wrap;
-    margin-left: 4rem;
+    
 }
 .populaire
 {
@@ -185,14 +198,16 @@ gap: 2em;
 {
     height: 10em;
     border-radius: 1em 0 0 1em;
-    width: 15em;
-    height: 10rem;
+    width: 20em;
+    height: 15rem;
     flex-wrap: wrap;
+    height: 40%;
+    height: 30%;
 }
 .populaire h3
 {
     position: relative;
-    top: 2em;
+    top: 3em;
 }
 .can{
     border: 1px solid white;
@@ -208,12 +223,15 @@ gap: 2em;
     gap: 2rem;
     background-color: white;
     border-radius: 20px;
+    gap: 10px;
+    margin: 10px;
 }
 .description{
     display: flex;
     flex-direction: column;
     background-color: white;
     border-radius: 20px;
+
 }
 .can3
 {
@@ -283,9 +301,7 @@ justify-content: space-around;
     width: 100%;
     margin-left: 4rem;
 }
-.marseille{
-    margin-left: 4rem;
-}
+
 .bloc, .bloc1
 {
     width: 23%;  
@@ -303,13 +319,12 @@ justify-content: space-around;
     margin-bottom: 100px;
     height: 50%;
     margin-bottom: 2rem;
-    
     gap: 2rem;
 } 
 .bloc02 img
 {
     width: 90%;
-    height: 13rem;
+    height: 11.5rem;
 
 }
 .bloc2, img{
@@ -327,6 +342,7 @@ justify-content: space-around;
     align-items: flex-start;
     padding-left: -1px;
     text-align: left;
+    background-color: beige;
 }
 .tailleBlocFoot{
     justify-content: center;
