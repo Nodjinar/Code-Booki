@@ -33,7 +33,7 @@ a
 }
 @media  (max-width: 800px) {
     .container-nav{
-        border: 2px solid blue;
+        border: 2px solid white;
     }
 }
 header
@@ -88,15 +88,19 @@ button:hover{
  margin-bottom: 40px;
  padding: right;
 } 
-.filtremargefiltre
+.filtremargFiltre
 {
-    justify-content: center;
+    display: flex;
+    padding: 20px;
+    margin: 20px;
+    margin: auto;
 }
 .filtre {
     display: flex;
     align-items: center;
 }
 .margFiltreTitre {
+    
     margin-right: 20px;
 }
 .filtreTexteIcons {
@@ -105,6 +109,7 @@ button:hover{
     height: 50px;
     border-radius: 30px;
     margin-right: 20px;
+    align-items: baseline;
 }
 .fitreTexteIcons:hover > .filtreTexte{
     color: #0065fc;
@@ -119,6 +124,7 @@ button:hover{
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 0 25px 25px 0;
+    justify-content: center;
 
 }
 .filtreIcons{
@@ -203,7 +209,7 @@ width: 100%;
  .hebergement
  {
     border: 1px solid none;
-    width: 68%;
+    width: 65%;
     border-radius: 1em;
     background-color:lightgrey;
     padding: 0.5em;
@@ -223,6 +229,10 @@ width: 100%;
     background-color: lightgrey;
     padding: 1em;
 }
+.populaire h3{
+    display: flex;
+    justify-content: space-between;
+}
 .populaire .article{
     display: flex;
     margin-bottom: 2.5em;
@@ -234,8 +244,14 @@ width: 100%;
 transform: scale(1.2);
 }
 .populaire .article img{
-    width: 60%;
+    width: 35%;
     border-radius: 1em 0 0 1em;
+}
+.populaire .description{
+    padding: 1em;
+}
+p {
+    font-weight: bold;
 }
 
 .fa-star
@@ -250,6 +266,9 @@ transform: scale(1.2);
     margin-left: 4rem;
 }
 
+.bloc{
+    border: 1px solid white;
+}
 .bloc, .bloc1
 {
     width: 23%;  
@@ -273,14 +292,19 @@ transform: scale(1.2);
 {
     width: 90%;
     height: 11.5rem;
-
+}
+.bloc02 {
+    border: 1px solid white;
+width: 100%;
+border-left: 10px;
 }
 .bloc2, img{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     width: 90%;
-}
+    }
 
+    
 /* footer*/
 .footer{
     height: 300px;
@@ -290,7 +314,7 @@ transform: scale(1.2);
     align-items: flex-start;
     padding-left: -1px;
     text-align: left;
-    background-color: beige;
+    background-color: lightgrey
 }
 .tailleBlocFoot{
     justify-content: center;
@@ -305,12 +329,47 @@ transform: scale(1.2);
     margin-left: 15%;
 }
 /* responsivité */
-@media (max-widht: 1020px){
-    .can{
-        min-height: 150px;
+@media screen and (max-widht: 770px){
+    .container-nav{
+        width: 90%;
     }
 }
+@media screen and (max-widht: 770px){
+    .Filtre margfiltre{
+        flex-direction: column;
+        align-items: center;
+    }   
+}
+@media screen and (max-widht: 800px){
+    .appartement{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    
+}
+@media screen and (max-widht: 1353px){
+    .populaire{
+    flex-wrap: wrap;
+    align-items: center;
+     }
+}
+@media screen and (max-widht:960px){
+    .populaire{
+        flex-direction: column;
+    }
+    
+}
 
+.bloc{
+    flex-direction: column;
+    align-items: center;
+}
+.bloc02{
+    flex-direction: column;
+    align-items: center;
+}
 
 
 
