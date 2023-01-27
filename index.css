@@ -3,10 +3,11 @@ html, body
 {
     font-family: sans-serif;
     font-size: italic;
-    margin-left: 4rem;
+    margin-left: 1rem;
+    margin-right: 2rem;
 
 }
-@media screen and (max-width: 1220px)
+/*@media screen and (max-width: 1220px)*/
 h1
 {
     color: blue;
@@ -33,7 +34,7 @@ a
 }
 @media  (max-width: 800px) {
     .container-nav{
-        border: 2px solid white;
+        border: 2px solid white
     }
 }
 header
@@ -47,6 +48,7 @@ header
 }
 /*BODY */
 .wrapper{
+    flex-direction: column;
     padding: 0 2rem;
 }
 /* SEARCH-FORM*/
@@ -94,6 +96,10 @@ button:hover{
     padding: 20px;
     margin: 20px;
     margin: auto;
+    flex-wrap: wrap;
+    width: 80%;
+    max-width: 1300px;
+    margin-left: 10px;
 }
 .filtre {
     display: flex;
@@ -111,6 +117,8 @@ button:hover{
     margin-right: 20px;
     align-items: baseline;
 }
+
+
 .fitreTexteIcons:hover > .filtreTexte{
     color: #0065fc;
 }
@@ -160,29 +168,27 @@ display: flex;
 flex-direction: row;
 margin-right: 40px;
 justify-content: space-between;
-width: 100%;
+
 }
 .appartement img{
     background-position: center;
 }
-@media screen and (max-width:600px){
-    .popular{
-        order: 1;
-        flex-direction: column;
-        width: 100%;
-    }
-    
-}
+
 .chambre1, .chambre2
 {
-    display: flex;;
+    display: flex;
     margin-bottom: 2em;
     gap: 2em;
+    justify-content: center;
+    width: 90%;
+    max-width: 1000px;
+
 }
 .chambre1
 {
     border: 5px solid none;
     border-radius: 20px;
+   
 }
 
 .can{
@@ -192,14 +198,6 @@ width: 100%;
     width: 40%;
 }
 
-
-.can3
-{
-    display: flex;
-    margin: 40px;
-    border: 1px solid black;
-    border-radius: 1rem; 
-}
 .chambre1 img, .chambre2 img {
     width: 100%;
     border-radius: 1em 1em 0 0;
@@ -213,6 +211,8 @@ width: 100%;
     border-radius: 1em;
     background-color:lightgrey;
     padding: 0.5em;
+    
+
  }
  .can:hover{
     transform: scale(1.1);
@@ -228,10 +228,14 @@ width: 100%;
     border-radius: 1em;
     background-color: lightgrey;
     padding: 1em;
+    
 }
 .populaire h3{
     display: flex;
     justify-content: space-between;
+   
+
+   
 }
 .populaire .article{
     display: flex;
@@ -265,6 +269,10 @@ p {
     width: 100%;
     margin-left: 4rem;
 }
+.cal{
+    height: 
+    95%;
+ }
 
 .bloc{
     border: 1px solid white;
@@ -328,39 +336,93 @@ border-left: 10px;
 {
     margin-left: 15%;
 }
-/* responsivité */
+/* responsivité 
 @media screen and (max-widht: 770px){
     .container-nav{
         width: 90%;
     }
 }
-@media screen and (max-widht: 770px){
-    .Filtre margfiltre{
+
+
+@media screen and (max-widht: 1248px){
+    .hebergement{
         flex-direction: column;
         align-items: center;
-    }   
-}
-@media screen and (max-widht: 800px){
-    .appartement{
-        flex-direction: column;
-        display: flex;
-        align-items: center;
-        width: 100%;
-    }
     
+    }
+    .can{
+        height: 50%;
+    }  
 }
-@media screen and (max-widht: 1353px){
+*/
+@media screen and (max-width:1100px){
     .populaire{
+        order: 1;
+        flex-direction: column;
+        height: auto;
+    } 
+    .appartement{
+        display: flex; 
+        flex-direction: column-reverse;
+
+    }
+   .chambre2, .bloc1, .activity, .article, .footer,.chambre1,.can, .hebergement{
+        display: flex;
+        flex-direction: column;
+    }
+    img{
+        width: 100%;
+        height: auto;
+    }
+    .appartement, .hebergement, .can, .chambre2, .populaire, .article, .bloc, .bloc02, .bloc1, .bloc2, .activity, .marseille
+    {
+        width: 100%;
+    }    
+    .hebergement{
+        margin-top: 
+        2rem;
+    }
+    .activity{
+     padding-right: 1rem;
+    }
+    .footer{
+       padding: 3rem;
+    }
+     .cal{
+        width: 90%;
+     }
+}/*
+@media screen and (max-widht: 1200px){
+   .populaire{
     flex-wrap: wrap;
     align-items: center;
      }
-}
-@media screen and (max-widht:960px){
-    .populaire{
+     .appartement{
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+    .hebergement{
+        display: flex;
         flex-direction: column;
     }
-    
+    img{
+        width: 100%;
+        height: auto;
+    }
+    .appartement, .hebergement, .can, .chambre2, .populaire, .article, .bloc, .bloc02, .bloc1, .bloc2, .activity, .marseille
+    {
+        width: 100%;
+    }    
+    .hebergement{
+        margin-top: 
+        10rem;
+    }
+    .activity{
+   padding-right: 1rem;
+    }
 }
+
 
 .bloc{
     flex-direction: column;
